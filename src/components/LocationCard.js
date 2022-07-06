@@ -1,8 +1,10 @@
 import React from 'react'
 
-const LocationCard = () => {
+const LocationCard = ({ city, country  }) => {
   return (
-    <div>LocationCard</div>
+    <div>
+        <h3>{city} | {country}</h3>
+    </div>
   )
 }
 
