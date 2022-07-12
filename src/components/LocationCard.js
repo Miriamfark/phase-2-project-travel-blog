@@ -1,9 +1,18 @@
 import React from 'react'
 
-const LocationCard = ({ city, country  }) => {
+
+const LocationCard = ({ food, landmark, city, country, setPassport, passport, location  }) => {
+
+    function handleClick(location) {
+        console.log("add this location to my passport", location)
+        const updatedPassportList = [... passport, location]
+        setPassport(updatedPassportList) 
+    }
+
   return (
     <div>
-        <h3>{city} | {country}</h3>
+        <p>{city} is located in {country}. It is known for its delicious {food}. Make sure to visit the {landmark}!</p>
+        <button onClick={()=>handleClick(location)}>I visited here!</button>
     </div>
   )
 }

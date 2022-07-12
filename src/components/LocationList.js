@@ -1,12 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import LocationCard from './LocationCard'
-import NewLocation from './NewLocation'
-import { Link } from "react-router-dom";
+import { Link, Routes, Route  } from "react-router-dom";
 
-const LocationList = () => {
-
-    const [locations, setLocations] = useState([])
-    const [isForm, setIsForm] = useState(false)
+const LocationList = ({ location, setLocation, locations, setLocations, passport, setPassport }) => {
 
     useEffect(() => {
         fetch("http://localhost:3001/locations")
@@ -18,24 +14,33 @@ const LocationList = () => {
 
     if (locations){
     locationCards = locations.map((location)=>{
-       return <LocationCard  
+       return (
+       <li key={location.id}>
+           <Link to={`/locations/${location.id}`}>{location.city}</Link>
+           <Routes>
+            <Route path={`:${location.id}`} element={<LocationCard  
+        passport={passport}
         key={location.id}
+        id={location.id}
         city={location.city}
-        country={location.country} />
+        country={location.country}
+        location={location}
+        setPassport={setPassport}
+        food={location.food}
+        landmark={location.landmark}
+    />} />
+        </Routes>
+        
+    </li>
+       )
     })
 }
 
-    function handleClick() {
-        setIsForm(!isForm)
-        console.log("clicked")
-    }
-
   return (
-    <div>
+    <div className='box'>
         <h1>Location List</h1>
         <ul>{locationCards}</ul>
-        <Link to={"/locations/new"} onClick={handleClick}>Add A New Travel Location</ Link>
-        {isForm ? <NewLocation /> : null}
+        <Link to={"/locations/new"}>Add A New Travel Location</ Link>
     </div>
   )
 }

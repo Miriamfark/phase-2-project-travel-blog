@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F9EBEA;
 }
 
 code {
@@ -13,6 +14,36 @@ code {
 }
 
 nav a.active {
-  background-color: black;
+  background-color: #C0392B;
   color: white;
+}
+
+.box {
+  background-color: white;
+  width: 80%;
+  margin: 6%;
+  padding: 50px;
+}
+
+.navlink {
+  margin: 30px;
+  color: #7B241C;
+  background-color: #D98880;
+  padding: 8px;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #E6B0AA;
+  padding: 2%;
+}
+
+#passportimage {
+  margin: 6%;
+  width: 80%;
+  opacity: .3;
+}
+
+.passport {
 }

@@ -1,19 +1,39 @@
 {
-    "locations":[
-        {
-            "id": 1,
-            "city": "New York City",
-            "country": "USA"
-        },
-        {
-            "id": 2,
-            "city": "London",
-            "country": "United Kingdom"
-        },
-        {
-            "id": 3,
-            "city": "Paris",
-            "country": "France"
-        }
-    ]
+  "locations": [
+    {
+      "id": 1,
+      "city": "New York City",
+      "country": "USA",
+      "food": "pizza",
+      "landmark": "Empire State Building"
+    },
+    {
+      "id": 2,
+      "city": "London",
+      "country": "United Kingdom",
+      "food": "fish and chips",
+      "landmark": "Big Ben"
+    },
+    {
+      "id": 3,
+      "city": "Paris",
+      "country": "France",
+      "food": "croissants",
+      "landmark": "Eiffel Tower"
+    },
+    {
+      "id": 4,
+      "city": "Jerusalem",
+      "country": "Israel",
+      "food": "falafel",
+      "landmark": "Western Wall"
+    },
+    {
+      "city": "Norfolk",
+      "country": "United States",
+      "food": "Cut fruit",
+      "landmark": "Naval museum",
+      "id": 5
+    }
+  ]
 }
