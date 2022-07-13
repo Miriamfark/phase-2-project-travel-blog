@@ -60,13 +60,13 @@ const NewLocation = () => {
       <h3>New Location</h3>
     <form id="form" onSubmit={handleSubmit}>
         <label>City</label>
-        <input onChange={handleCityChange} type="text" placeholder="type city here..."></input>
+        <input onChange={handleCityChange} type="text" required="required" placeholder="type city here..."></input>
         <label>Country</label>
-        <input onChange={handleCountryChange} type="text" placeholder="type country here..."></input>
+        <input onChange={handleCountryChange} type="text" required="required" placeholder="type country here..."></input>
         <label>Iconic Food</label>
-        <input onChange={handleFoodChange} type="text" placeholder="type food here..."></input>
+        <input onChange={handleFoodChange} type="text" minlength="1" placeholder="type food here..."></input>
         <label>Landmark</label>
-        <input onChange={handleLandmarkChange} type="text" placeholder="type landmark here..."></input>
+        <input onChange={handleLandmarkChange} type="text" minlength="1" placeholder="type landmark here..."></input>
         <input type="submit"></input> 
     </form>
     </div>
