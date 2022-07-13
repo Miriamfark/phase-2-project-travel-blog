@@ -8,6 +8,7 @@ function NavBar() {
             <NavLink className="navlink" exact to="/">Home</NavLink>
             <NavLink className="navlink" exact to="/locations">Locations</NavLink>
             <NavLink className="navlink" exact to="/mypassport">My Passport</NavLink>
+            <NavLink className="navlink" exact to="/mybucketlist">My Bucket List</NavLink>
         </nav>
     );
 }

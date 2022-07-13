@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom"
 import NewLocation from "./NewLocation";
 import Passport from "./Passport";
 import LocationList from "./LocationList";
+import BucketList from "./BucketList";
 
 function App() {
   
@@ -27,6 +28,7 @@ function App() {
                 <Route path="locations/new" element={<NewLocation />} />
                 <Route exact path="/" element={<Home />} />
                 <Route path="/mypassport" element={<Passport passport={passport} />} />
+                <Route path="/mybucketlist" element={<BucketList />} />
                 <Route path="*" element={<h1>Sorry, this page does not exist</h1>} />
             </ Routes>
      </div>

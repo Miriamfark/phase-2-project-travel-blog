@@ -14,7 +14,7 @@ const Passport = ({ passport }) => {
         <ul>
             {passportDisplay}
             
-                {passportDisplay.length === 0 ? <h3>None</h3> : {passportDisplay}}
+                {/* {passportDisplay.length === 0 ? <h3>None</h3> : {passportDisplay}} */}
             
         </ul>
         <img id="passportimage"
