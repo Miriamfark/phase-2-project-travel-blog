@@ -1,8 +1,20 @@
 import React from 'react'
 
-const BucketList = () => {
+const BucketList = ({ bucketList }) => {
+
+    console.log(bucketList)
+
+    const bucketListDisplay = bucketList.map((entry)=>{
+        return <li key={entry.id}>{entry.city} | {entry.country}</li>
+    })
+
   return (
-    <div>BucketList</div>
+    <div class="box">
+       <h2>My Travel Bucket List</h2>
+       <ul>
+            {bucketListDisplay}
+       </ul>
+    </div>
   )
 }
 

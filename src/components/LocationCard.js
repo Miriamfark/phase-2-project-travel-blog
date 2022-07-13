@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const LocationCard = ({ food, landmark, city, country, setPassport, passport, location  }) => {
+const LocationCard = ({ food, landmark, city, country, setPassport, passport, location, bucketList, setBucketList  }) => {
 
     function handleClick(location) {
         console.log("add this location to my passport", location)
@@ -10,11 +10,18 @@ const LocationCard = ({ food, landmark, city, country, setPassport, passport, lo
         {alert(`${city}, ${country} has been added to your passport`)}
     }
 
+    function handleBucketClick(location) {
+        console.log("add this location to my bucket list", location)
+        const updatedBucketList = [...bucketList, location]
+        setBucketList(updatedBucketList)
+        {alert(`${city}, ${country} has been added to your bucket list`)}
+    }
+
   return (
     <div class="description">
         <p>{city} is located in {country}. It is known for its delicious {food}. Make sure to visit the {landmark}!</p>
         <button className="button" onClick={()=>handleClick(location)}>I visited here!</button>
-        <button className="button">Add to my bucket list</button>
+        <button className="button" onClick={()=>handleBucketClick(location)}>Add to my bucket list</button>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import LocationCard from './LocationCard'
 import { Link, Routes, Route  } from "react-router-dom";
 
-const LocationList = ({ location, setLocation, locations, setLocations, passport, setPassport }) => {
+const LocationList = ({ bucketList, setBucketList, location, setLocation, locations, setLocations, passport, setPassport }) => {
 
     useEffect(() => {
         fetch("http://localhost:3001/locations")
@@ -28,6 +28,8 @@ const LocationList = ({ location, setLocation, locations, setLocations, passport
         setPassport={setPassport}
         food={location.food}
         landmark={location.landmark}
+        bucketList={bucketList}
+        setBucketList={setBucketList}
     />} />
         </Routes>
         
