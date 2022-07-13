@@ -29,6 +29,7 @@ const NewLocation = () => {
 
     function handleSubmit(e) {
         e.preventDefault()
+        alert(`${city}, ${country} has been submitted`)
         const newLocationData = {
             city: city,
             country: country,
@@ -46,12 +47,18 @@ const NewLocation = () => {
         })
             .then((r) => r.json())
             .then((newItem) => console.log(newItem));
+
+            {
+                const form= document.getElementById('form')
+                form.reset()
+            }
+
     }
 
   return (
       <div class="box">
       <h3>New Location</h3>
-    <form onSubmit={handleSubmit}>
+    <form id="form" onSubmit={handleSubmit}>
         <label>City</label>
         <input onChange={handleCityChange} type="text" placeholder="type city here..."></input>
         <label>Country</label>
