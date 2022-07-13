@@ -45,9 +45,6 @@ nav a.active {
   opacity: .3;
 }
 
-.passport {
-}
-
 .button {
   margin: 30px;
   color: #7B241C;
@@ -61,4 +58,12 @@ nav a.active {
 .button:hover {
   background-color: #C0392B;
   color: white;
+}
+
+.description {
+  margin: 25px;
+  padding: 3%;
+  border-style: solid;
+  border-color: #D98880;
+  border-width: 5px;
 }

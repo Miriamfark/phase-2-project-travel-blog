@@ -9,7 +9,7 @@ const Passport = ({ passport }) => {
     })
 
   return (
-    <div class="passport">
+    <div class="box">
         <h2>My Passport</h2>
         <ul>
             {passportDisplay}

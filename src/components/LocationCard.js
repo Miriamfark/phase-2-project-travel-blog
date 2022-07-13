@@ -11,7 +11,7 @@ const LocationCard = ({ food, landmark, city, country, setPassport, passport, lo
     }
 
   return (
-    <div>
+    <div class="description">
         <p>{city} is located in {country}. It is known for its delicious {food}. Make sure to visit the {landmark}!</p>
         <button className="button" onClick={()=>handleClick(location)}>I visited here!</button>
     </div>
