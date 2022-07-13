@@ -50,7 +50,7 @@ const NewLocation = () => {
 
   return (
       <div class="box">
-      <h4>New Location</h4>
+      <h3>New Location</h3>
     <form onSubmit={handleSubmit}>
         <label>City</label>
         <input onChange={handleCityChange} type="text" placeholder="type city here..."></input>

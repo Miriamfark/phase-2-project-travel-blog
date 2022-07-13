@@ -67,3 +67,25 @@ nav a.active {
   border-color: #D98880;
   border-width: 5px;
 }
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  margin: 30px;
+  color: #7B241C;
+  background-color: #D98880;
+  padding: 8px;
+  font-size: larger;
+  text-decoration: none;
+  border: none;
+}
+
+input[type=submit]:hover {
+  background-color: #C0392B;
+  color: white;
+}
