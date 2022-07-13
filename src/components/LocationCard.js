@@ -7,6 +7,7 @@ const LocationCard = ({ food, landmark, city, country, setPassport, passport, lo
         console.log("add this location to my passport", location)
         const updatedPassportList = [... passport, location]
         setPassport(updatedPassportList) 
+        {alert(`${city}, ${country} has been added to your passport`)}
     }
 
   return (
