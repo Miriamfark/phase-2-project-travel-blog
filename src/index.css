@@ -47,3 +47,18 @@ nav a.active {
 
 .passport {
 }
+
+.button {
+  margin: 30px;
+  color: #7B241C;
+  background-color: #D98880;
+  padding: 8px;
+  font-size: larger;
+  text-decoration: none;
+  border: none;
+}
+
+.button:hover {
+  background-color: #C0392B;
+  color: white;
+}
