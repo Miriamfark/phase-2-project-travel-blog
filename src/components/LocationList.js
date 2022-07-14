@@ -1,14 +1,7 @@
-import React, { useEffect } from 'react'
-import LocationCard from './LocationCard'
-import { Link, Routes, Route  } from "react-router-dom";
+import React from 'react'
+import { Link } from "react-router-dom";
 
-const LocationList = ({ bucketList, setBucketList, location, setLocation, locations, setLocations, passport, setPassport }) => {
-
-    useEffect(() => {
-        fetch("http://localhost:3001/locations")
-            .then(r => r.json())
-            .then(data => setLocations(data))
-    }, [])
+const LocationList = ({ locations }) => {
 
     let locationCards
 
@@ -16,22 +9,8 @@ const LocationList = ({ bucketList, setBucketList, location, setLocation, locati
     locationCards = locations.map((location)=>{
        return (
        <li key={location.id}>
-           <Link to={`/locations/${location.id}`}>{location.city}</Link>
-           <Routes>
-            <Route path={`:${location.id}`} element={<LocationCard  
-        passport={passport}
-        key={location.id}
-        id={location.id}
-        city={location.city}
-        country={location.country}
-        location={location}
-        setPassport={setPassport}
-        food={location.food}
-        landmark={location.landmark}
-        bucketList={bucketList}
-        setBucketList={setBucketList}
-    />} />
-        </Routes>
+           <Link to={`/locations-detail/${location.id}`}>{location.city}</Link>
+          
         
     </li>
        )

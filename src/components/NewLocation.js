@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const NewLocation = () => {
+const NewLocation = ({locations, setLocations }) => {
 
     const [city, setCity] = useState("")
     const [country, setCountry] = useState("")
@@ -36,7 +36,6 @@ const NewLocation = () => {
             food: food,
             landmark: landmark
           };
-        console.log(newLocationData)
 
         fetch("http://localhost:3001/locations", {
             method: "POST",
@@ -46,14 +45,23 @@ const NewLocation = () => {
             body: JSON.stringify(newLocationData),
         })
             .then((r) => r.json())
-            .then((newItem) => console.log(newItem));
+            .then((newItem) => {
+                console.log(newItem);
+
+            const updatedLocations = [...locations, newItem ]
+
+            setLocations(updatedLocations)
+            })
 
             {
                 const form= document.getElementById('form')
                 form.reset()
             }
+            
 
     }
+
+    console.log("locations", locations)
 
   return (
       <div class="box">

@@ -5,35 +5,63 @@
       "city": "New York City",
       "country": "USA",
       "food": "pizza",
-      "landmark": "Empire State Building"
+      "landmark": "Empire State Building",
+      "comments": [
+        "nice place to visit!",
+        "hello",
+        "it was so fun",
+        "pizza was great"
+      ]
     },
     {
       "id": 2,
       "city": "London",
       "country": "United Kingdom",
       "food": "fish and chips",
-      "landmark": "Big Ben"
+      "landmark": "Big Ben",
+      "comments": [
+        "We had a great time!",
+        "people here are very proper"
+      ]
     },
     {
       "id": 3,
       "city": "Paris",
       "country": "France",
       "food": "croissants",
-      "landmark": "Eiffel Tower"
+      "landmark": "Eiffel Tower",
+      "comments": [
+        "We had a great time!"
+      ]
     },
     {
       "id": 4,
       "city": "Jerusalem",
       "country": "Israel",
       "food": "falafel",
-      "landmark": "Western Wall"
+      "landmark": "Western Wall",
+      "comments": [
+        "We had a great time!",
+        "it was such a special trip"
+      ]
     },
     {
+      "id": 5,
       "city": "Norfolk",
       "country": "United States",
       "food": "fresh sea food",
       "landmark": "Naval museum",
-      "id": 5
+      "comments": [
+        "We had a great time!",
+        "It was so great we decided to move"
+      ]
+    },
+    {
+      "city": "a",
+      "country": "b",
+      "food": "c",
+      "landmark": "d",
+      "id": 6
     }
   ]
 }
