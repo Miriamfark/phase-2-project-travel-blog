@@ -7,11 +7,7 @@
       "food": "pizza",
       "landmark": "Empire State Building",
       "comments": [
-        "nice place to visit!",
-        "hello",
-        "it was so fun",
-        "pizza was great",
-        "new review"
+        "nice place to visit!"
       ]
     },
     {
@@ -32,15 +28,7 @@
       "food": "croissants",
       "landmark": "Eiffel Tower",
       "comments": [
-        "We had a great time!",
-        "miriam",
-        "avi",
-        "suri",
-        "shua",
-        "katza",
-        "opa",
-        "judy",
-        "henry"
+        "We had a great time!"
       ]
     },
     {
@@ -50,7 +38,6 @@
       "food": "falafel",
       "landmark": "Western Wall",
       "comments": [
-        "We had a great time!",
         "it was such a special trip",
         "I really enjoyed visiting the Dead Sea!",
         "pitzuchei kol rina malchei yisroel fantastic pecans... great kabukim"
@@ -63,44 +50,9 @@
       "food": "fresh sea food",
       "landmark": "Naval museum",
       "comments": [
-        "We had a great time!",
         "It was so great we decided to move",
         "Great vibes!"
       ]
-    },
-    {
-      "city": "Deerfield Beach",
-      "country": "U.S.A",
-      "food": "Beer",
-      "landmark": "7Eleven",
-      "comments": [],
-      "id": 6
-    },
-    {
-      "city": "Netanya",
-      "country": "Israel",
-      "food": "Ice cream on the beach",
-      "landmark": "Kiryat Sanz",
-      "comments": [],
-      "id": 7
-    },
-    {
-      "city": "Vancouver",
-      "country": "Canada",
-      "food": "Maple syrup",
-      "landmark": "canadian rockies",
-      "comments": [],
-      "id": 8
-    },
-    {
-      "city": "Athens",
-      "country": "Greece",
-      "food": "olives",
-      "landmark": "philosphers",
-      "comments": [
-        "follows the mediterranean diet"
-      ],
-      "id": 9
     }
   ]
 }

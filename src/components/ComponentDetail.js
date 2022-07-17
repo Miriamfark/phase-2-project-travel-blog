@@ -1,10 +1,11 @@
 import React from 'react'
-import { Routes, Route, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import LocationCard from './LocationCard';
 
 const ComponentDetail = ({ locations, passport, setPassport, bucketList, setBucketList }) => {
 
     let { id } = useParams();
+    console.log(id)
 
     let selectedLocations;
 
