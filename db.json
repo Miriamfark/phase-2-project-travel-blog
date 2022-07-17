@@ -31,7 +31,15 @@
       "food": "croissants",
       "landmark": "Eiffel Tower",
       "comments": [
-        "We had a great time!"
+        "We had a great time!",
+        "miriam",
+        "avi",
+        "suri",
+        "shua",
+        "katza",
+        "opa",
+        "judy",
+        "henry"
       ]
     },
     {
@@ -42,7 +50,9 @@
       "landmark": "Western Wall",
       "comments": [
         "We had a great time!",
-        "it was such a special trip"
+        "it was such a special trip",
+        "I really enjoyed visiting the Dead Sea!",
+        "pitzuchei kol rina malchei yisroel fantastic pecans... great kabukim"
       ]
     },
     {
@@ -53,15 +63,25 @@
       "landmark": "Naval museum",
       "comments": [
         "We had a great time!",
-        "It was so great we decided to move"
+        "It was so great we decided to move",
+        "Great vibes!"
       ]
     },
     {
-      "city": "a",
-      "country": "b",
-      "food": "c",
-      "landmark": "d",
+      "city": "Deerfield Beach",
+      "country": "U.S.A",
+      "food": "Beer",
+      "landmark": "7Eleven",
+      "comments": [],
       "id": 6
+    },
+    {
+      "city": "Netanya",
+      "country": "Israel",
+      "food": "Ice cream on the beach",
+      "landmark": "Kiryat Sanz",
+      "comments": [],
+      "id": 7
     }
   ]
 }

@@ -14,6 +14,7 @@ const BucketList = ({ bucketList }) => {
        <ul>
             {bucketListDisplay}
        </ul>
+       <img className="image" src="https://media.istockphoto.com/photos/inspirational-and-conceptual-picture-id1006968168?k=20&m=1006968168&s=612x612&w=0&h=61-iouzRzSBYbA3QzrZNBFvLvzMjvekJ5wnH-HEuB9I="/>
     </div>
   )
 }

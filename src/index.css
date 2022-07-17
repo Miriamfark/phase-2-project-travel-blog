@@ -39,7 +39,7 @@ nav a.active {
   padding: 2%;
 }
 
-#passportimage {
+.image {
   margin: 6%;
   width: 80%;
   opacity: .3;
@@ -88,4 +88,12 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #C0392B;
   color: white;
+}
+
+.logo {
+  margin: 30px;
+  color: #7B241C;
+  padding: 8px;
+  font-size: 30px;
+  text-decoration: none;
 }

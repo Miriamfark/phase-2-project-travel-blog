@@ -5,9 +5,9 @@ const Home = () => {
 
   return (
     <div class="box">
-        <h1>Travel Blog</h1>
-        <Link className="button" to={"/mypassport"}>Click to see my travels!</Link>
-        <Link className="button" to={"/mybucketlist"}>Click to see my future destinations!</Link>
+        <h1>Welcome to Globetrotter</h1>
+        <p>A travel app for all travelers, from local tourists to experienced adventurers. Track your journeys, share your experiences with others, and plan your next great destination.</p>
+        <img className="image" src="https://st2.depositphotos.com/4770601/7158/v/950/depositphotos_71582253-stock-illustration-globetrotting.jpg"/>
     </div>
   )
 }

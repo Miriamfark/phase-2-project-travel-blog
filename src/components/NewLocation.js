@@ -6,6 +6,7 @@ const NewLocation = ({locations, setLocations }) => {
     const [country, setCountry] = useState("")
     const [food, setFood] = useState("")
     const [landmark, setLandmark] = useState("")
+    const [comments, setComments] = useState([])
 
     function handleCityChange(e) {
         setCity(e.target.value)
@@ -27,6 +28,11 @@ const NewLocation = ({locations, setLocations }) => {
         console.log("landmark:", landmark)
     }
 
+    function handleCommentsChange(e) {
+        setComments(e.target.value)
+        console.log("comments", comments)
+    }
+
     function handleSubmit(e) {
         e.preventDefault()
         alert(`${city}, ${country} has been submitted`)
@@ -34,7 +40,8 @@ const NewLocation = ({locations, setLocations }) => {
             city: city,
             country: country,
             food: food,
-            landmark: landmark
+            landmark: landmark,
+            comments: []
           };
 
         fetch("http://localhost:3001/locations", {
@@ -72,9 +79,11 @@ const NewLocation = ({locations, setLocations }) => {
         <label>Country</label>
         <input onChange={handleCountryChange} type="text" required="required" placeholder="type country here..."></input>
         <label>Iconic Food</label>
-        <input onChange={handleFoodChange} type="text" minlength="1" placeholder="type food here..."></input>
+        <input onChange={handleFoodChange} type="text" placeholder="type food here..."></input>
         <label>Landmark</label>
-        <input onChange={handleLandmarkChange} type="text" minlength="1" placeholder="type landmark here..."></input>
+        <input onChange={handleLandmarkChange} type="text" placeholder="type landmark here..."></input>
+        <label>Comments</label>
+        <input onChange={handleCommentsChange} type="text" placeholder="add your comments here..." ></input>
         <input type="submit"></input> 
     </form>
     </div>

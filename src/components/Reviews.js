@@ -1,22 +1,28 @@
 import React from 'react'
 
-const  Reviews = ({ reviews }) => {
+const  Reviews = ({ reviews, newReview, }) => {
 
-  let reviewsList;
+  console.log("hello from review component", newReview)
 
-  if (reviews) {
-    reviewsList = reviews.map((review)=>{
+  const updatedReviewList = [
+    ...reviews, newReview
+  ]
+
+  let mappedReviewsList
+
+  if (updatedReviewList) {
+    mappedReviewsList = updatedReviewList.map((review)=>{
     return <li>{review}</li>
   })
 }
 
-  console.log("reviews being displayed", reviewsList)
+  // console.log("reviews being displayed", reviewsList)
 
   return (
     <div>
         <h4>Reviews</h4>
         <ul>
-          {reviewsList}
+          {mappedReviewsList}
         </ul>
         
     </div>

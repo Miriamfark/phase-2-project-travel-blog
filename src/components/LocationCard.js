@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import Reviews from './Reviews'
 
 
-const LocationCard = ({ food, landmark, city, country, setPassport, passport, location, bucketList, setBucketList, reviews  }) => {
+const LocationCard = ({ food, landmark, city, country, setPassport, passport, location, bucketList, setBucketList, reviews }) => {
 
-  const [review, setReview] = useState([])
+  const [newReview, setNewReview] = useState([])
   
   function handleClick(location) {
         console.log("add this location to my passport", location)
@@ -21,17 +21,17 @@ const LocationCard = ({ food, landmark, city, country, setPassport, passport, lo
     }
 
     function handleReviewChange(e) {
-      setReview(e.target.value)
-      console.log("review:", review)
+      setNewReview(e.target.value)
     }
 
     function handleSubmit(e) {
        e.preventDefault()
       
       const reviewData = [
-        ...location.comments, review
+        ...location.comments, newReview
       ]
-      setReview(reviewData)
+
+      // console.log(location)
 
       fetch(`http://localhost:3001/locations/${location.id}`, {
         method: "PATCH",
@@ -41,21 +41,22 @@ const LocationCard = ({ food, landmark, city, country, setPassport, passport, lo
         body: JSON.stringify({comments: reviewData})
       })
       .then((r)=>r.json())
-      .then((data)=>console.log(data))
-       
-
+      .then((data)=>{
+        console.log( "data.comments", data.comments)
+      })
+  
       {
         const form= document.getElementById('review-form')
         form.reset()
     }
     }
-    console.log("after patched", review)
+    console.log("after patched", newReview)
 
   return (
     <div class="description">
         <h2>{city} | {country}</h2>
         <p>{city} is located in {country}. It is known for its delicious {food}. Make sure to visit the {landmark}!</p>
-        <Reviews reviews={reviews} />
+        <Reviews reviews={reviews} newReview={newReview} />
         <button className="button" onClick={()=>handleClick(location)}>I visited here!</button>
         <button className="button" onClick={()=>handleBucketClick(location)}>Add to my bucket list</button>
         <form id="review-form" onSubmit={handleSubmit}>
