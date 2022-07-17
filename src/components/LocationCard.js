@@ -50,15 +50,15 @@ const LocationCard = ({ food, landmark, city, country, setPassport, passport, lo
         form.reset()
     }
     }
-    console.log("after patched", newReview)
+    // console.log("after patched", newReview)
 
   return (
     <div class="description">
         <h2>{city} | {country}</h2>
         <p>{city} is located in {country}. It is known for its delicious {food}. Make sure to visit the {landmark}!</p>
         <Reviews reviews={reviews} newReview={newReview} />
-        <button className="button" onClick={()=>handleClick(location)}>I visited here!</button>
-        <button className="button" onClick={()=>handleBucketClick(location)}>Add to my bucket list</button>
+        <button className="button" onClick={()=>handleClick(location)}>I visited here! Add to my passport</button>
+        <button className="button" onClick={()=>handleBucketClick(location)}>I want to visit here! Add to my bucket list</button>
         <form id="review-form" onSubmit={handleSubmit}>
           <label>Add Review</label>
           <input onChange={handleReviewChange} type="text"></input>

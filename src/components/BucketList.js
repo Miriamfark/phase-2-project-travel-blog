@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BucketList = ({ bucketList }) => {
 
@@ -7,6 +8,15 @@ const BucketList = ({ bucketList }) => {
     const bucketListDisplay = bucketList.map((entry)=>{
         return <li key={entry.id}>{entry.city} | {entry.country}</li>
     })
+
+    if (bucketListDisplay.length === 0) {
+      return(
+        <div className="box">
+          <h3>Your passport is currently empty.</h3>
+          <Link to="/locations/*" className="button">Click here to add a destination to your bucket list</Link>
+        </div>
+      )
+    }
 
   return (
     <div class="box">

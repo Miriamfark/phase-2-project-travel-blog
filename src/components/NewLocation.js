@@ -41,7 +41,7 @@ const NewLocation = ({locations, setLocations }) => {
             country: country,
             food: food,
             landmark: landmark,
-            comments: []
+            comments: [comments]
           };
 
         fetch("http://localhost:3001/locations", {

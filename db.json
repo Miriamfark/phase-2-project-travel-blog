@@ -10,7 +10,8 @@
         "nice place to visit!",
         "hello",
         "it was so fun",
-        "pizza was great"
+        "pizza was great",
+        "new review"
       ]
     },
     {
@@ -82,6 +83,24 @@
       "landmark": "Kiryat Sanz",
       "comments": [],
       "id": 7
+    },
+    {
+      "city": "Vancouver",
+      "country": "Canada",
+      "food": "Maple syrup",
+      "landmark": "canadian rockies",
+      "comments": [],
+      "id": 8
+    },
+    {
+      "city": "Athens",
+      "country": "Greece",
+      "food": "olives",
+      "landmark": "philosphers",
+      "comments": [
+        "follows the mediterranean diet"
+      ],
+      "id": 9
     }
   ]
 }
