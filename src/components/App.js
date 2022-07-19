@@ -15,7 +15,7 @@ function App() {
   const [bucketList, setBucketList] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:3001/locations")
+    fetch("http://localhost:3000/locations")
         .then(r => r.json())
         .then(data => setLocations(data))
 }, [])

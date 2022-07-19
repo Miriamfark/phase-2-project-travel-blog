@@ -1,22 +1,18 @@
 import React from 'react'
 
-const  Reviews = ({ reviews, newReview, }) => {
-
-  const updatedReviewList = [
-    ...reviews, newReview
-  ]
+const  Reviews = ({ reviews, newReview }) => {
 
   let mappedReviewsList
 
-  if (updatedReviewList) {
-    mappedReviewsList = updatedReviewList.map((review)=>{
-    return <li key={review.index}>{review}</li>
+  if (reviews) {
+    mappedReviewsList = reviews.map((review)=>{
+    return <li key={reviews.index}>{review}</li>
   })
 }
 
 console.log("reviews", reviews)
 console.log("newReview", newReview)
-console.log("updatedReviewList", updatedReviewList)
+
 console.log("mappedReviewsList", mappedReviewsList)
 
   return (

@@ -44,7 +44,7 @@ const NewLocation = ({locations, setLocations }) => {
             comments: [comments]
           };
 
-        fetch("http://localhost:3001/locations", {
+        fetch("http://localhost:3000/locations", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",

@@ -5,6 +5,7 @@ import Reviews from './Reviews'
 const LocationCard = ({ food, landmark, city, country, setPassport, passport, location, bucketList, setBucketList, reviews }) => {
 
   const [newReview, setNewReview] = useState([])
+
   
   function handleClick(location) {
         console.log("add this location to my passport", location)
@@ -33,7 +34,7 @@ const LocationCard = ({ food, landmark, city, country, setPassport, passport, lo
 
       // console.log(location)
 
-      fetch(`http://localhost:3001/locations/${location.id}`, {
+      fetch(`http://localhost:3000/locations/${location.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type" : "application/json", 
@@ -42,9 +43,11 @@ const LocationCard = ({ food, landmark, city, country, setPassport, passport, lo
       })
       .then((r)=>r.json())
       .then((data)=>{
-        console.log( "data.comments", data.comments)
+        const lastReview = data.comments[data.comments.length -1]
+        setNewReview(lastReview)
       })
-  
+      
+      
       {
         const form= document.getElementById('review-form')
         form.reset()

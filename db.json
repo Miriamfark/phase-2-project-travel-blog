@@ -7,7 +7,8 @@
       "food": "pizza",
       "landmark": "Empire State Building",
       "comments": [
-        "nice place to visit!"
+        "nice place to visit!",
+        "we had a great time!"
       ]
     },
     {
@@ -18,7 +19,8 @@
       "landmark": "Big Ben",
       "comments": [
         "We had a great time!",
-        "people here are very proper"
+        "people here are very proper",
+        "it rained the whole time"
       ]
     },
     {
@@ -53,6 +55,16 @@
         "It was so great we decided to move",
         "Great vibes!"
       ]
+    },
+    {
+      "city": "Toronto",
+      "country": "Canada",
+      "food": "Maple syrup",
+      "landmark": "CN Tower",
+      "comments": [
+        "Bring your winter coat because it is cold"
+      ],
+      "id": 6
     }
   ]
 }
