@@ -1,6 +1,6 @@
 # Phase 2 Project: Travel Blog
 
-Track your travels and get inspired for your next trip!
+Track your bags and get inspired for your next trip!
 
 ## Project Purepose
 
